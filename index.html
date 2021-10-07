@@ -25,11 +25,11 @@
 
 	<!-- search -->
 	<script>
-		var searchEngine = "";
+		var searchEngine = "https://www.baidu.com/s?wd=";
 		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
 			searchEngine = "https://www.google.com/search?q=";
 		}
-		var homeHost = "";
+		var homeHost = "yeyu01.github.io";
 		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
 			homeHost = window.location.host;
 		}
@@ -154,10 +154,9 @@ var _hmt = _hmt || [];
 					练习笔记
 				</h2>
 				<div class="index-brief">
-					date: 2021-10-05 14:01:35
-1.更换主题步骤1.下载主题命令git clone +网址 下载位置themes/名字
+					1.更换主题步骤1.下载主题命令git clone +网址 下载位置themes/名字
 2.在根目录打开主题配置文件_config.yml，修改主题为theme: 名字，之前的可以不删用#号注释掉
-3.hexo clean生成命令前清除缓存命令he
+3.hexo clean生成命令前清除缓存命令hexo s预览 hexo g生成静态页面至public
 					...
 				</div>
 			</a>
