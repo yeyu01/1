@@ -9,7 +9,7 @@
 	
 	<title>
 	
-		hexo笔记 | 
+		tags | 
 	 
 	yuyin
 	</title>
@@ -142,7 +142,7 @@ var _hmt = _hmt || [];
 							</ul>
 			
 							<ul>
-								<li class="file active">
+								<li class="file">
 									<a href="/2021/10/05/%E7%BB%83%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 										练习笔记
 									</a>
@@ -157,84 +157,18 @@ var _hmt = _hmt || [];
 	<!-- 引入正文 -->
 	<div id="content">
 		<h1 id="article-title">
-
-	练习笔记
+	<i class="fa fa-tags" aria-hidden="true"></i>TAGS
 </h1>
-<div class="article-meta">
-	
-	<span>yeyu01</span>
-	<span>2021-10-05 14:01:35</span>
-		<div id="article-categories">
-    
-		<span>Categories：</span>
-            
-    
+<h2 id="article-title">
+	目前共计 0 个标签
+</h2>
 
-    
-		<span>Tags：</span>
-            
-    
-		</div>
-
-</div>
 
 <div id="article-content">
-	<h1 id="1-更换主题步骤"><a href="#1-更换主题步骤" class="headerlink" title="1.更换主题步骤"></a>1.更换主题步骤</h1><p>1.下载主题命令git clone +网址 下载位置themes/名字</p>
-<p>2.在根目录打开主题配置文件_config.yml，修改主题为theme: 名字，之前的可以不删用#号注释掉</p>
-<p>3.hexo clean生成命令前清除缓存命令hexo s预览 hexo g生成静态页面至public目录 hexo deploy将.deploy目录部署到GitHub</p>
-<p>4.</p>
-<p>hexo n == hexo new<br>hexo g == hexo generate<br>hexo s == hexo server<br>hexo d == hexo deploy</p>
-<p>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</p>
-<h1 id="2-错点"><a href="#2-错点" class="headerlink" title="2.错点"></a>2.错点</h1><p>1.知乎上找的一个next主题，下载后预览都不行，没找到哪里是哪里的问题，最后换了其它主题正常了。</p>
-<p>2.部署时错误errno 10054，网不好多试几次就好了</p>
-<p>3.遇到404问题，预览什么都正常，打开主页就是404，最后百度找到了符合的解决，在GH设置选项，pages处domain重新输入域名正常，再次换主题还是有问题，因为用了域名，换了主题后没有CNAME,根文件source文件夹里新建一个命名为CNAME的文件，写上域名好了</p>
-<p>4.打开主页出现好几行乱码</p>
-<p>问题原因#<br>原因是hexo在5.0之后把swig给删除了需要自己手动安装</p>
-<p>问题解决#<br> npm i hexo-renderer-swig<br>之后重新部署就行</p>
-<p>5.Spawn failed<br>OpenSSL SSL_read: Connection was reset, errno 10054<br>FATAL<br>  err: Error: Spawn failed</p>
-<p>部署时经常出现的，有时是好的网的问题</p>
-<p>6.下载了个 tree的主题，在reandme里看到下载百度统计的功能下载了，试着安装位置不对后代码检查错误，后看到是下载文件原来上面有，替换后正常</p>
-
+	<ul>
+      
+	</ul>
 </div>
-
-
-    <div class="post-guide">
-        <div class="item left">
-            
-        </div>
-        <div class="item right">
-            
-              <a href="/2021/09/29/hello-world/">
-                hello-world
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-              </a>
-            
-        </div>
-    </div>
-
-
-
-	<div id="vcomments"></div>
-
-
-<script>
-	
-		// 评论
-		new Valine({
-			av: AV,
-			el: '#vcomments',
-			notify: false,
-			verify: false,
-			path: window.location.pathname,
-			appId: 'PBSMqjtMoUSh6iwnFs228edH-MdYXbMMI',
-			appKey: 'julhFD2MXtgorvhvFJf8FJBs',
-			placeholder: '请输入评论',
-			avatar: 'retro',
-			recordIP: false
-		})
-	
-	
-</script>
 	</div>
 	<div id="footer">
 	<p>
