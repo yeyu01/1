@@ -118,6 +118,11 @@ var _hmt = _hmt || [];
 				<i class="fa fa-github fa-2x"></i>
 			</a>
 		</li>
+		<li class="menu-item">
+			<a href="/公益404" class="menu-item-link" target="_blank">
+				公益404
+			</a>
+		</li>
 	</ul>
 </header>
 
@@ -178,6 +183,10 @@ var _hmt = _hmt || [];
 	hello-world
 </h1>
 <div class="article-meta">
+	
+		<span>
+			阅读量:<span id="/2021/09/29/hello-world/" class="leancloud_visitors" data-flag-title="Hello World"></span>
+		</span>
 	
 	<span>yeyu01</span>
 	<span>2021-09-29 00:11:07</span>
@@ -249,6 +258,38 @@ var _hmt = _hmt || [];
 			recordIP: false
 		})
 	
+	
+    // 显示次数
+		function showTime(Counter) {
+			var query = new AV.Query("Counter");
+			if($(".leancloud_visitors").length > 0){
+				var url = $(".leancloud_visitors").attr('id').trim();
+				// where field
+				query.equalTo("words", url);
+				// count
+				query.count().then(function (number) {
+					// There are number instances of MyClass where words equals url.
+					$(document.getElementById(url)).text(number?  number : '--');
+				}, function (error) {
+					// error is an instance of AVError.
+				});
+			}
+		}
+		// 追加pv
+		function addCount(Counter) {
+			var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'wujun234.github.io';
+			var Counter = AV.Object.extend("Counter");
+			var query = new Counter;
+			query.save({
+				words: url
+			}).then(function (object) {
+			})
+		}
+		$(function () {
+			var Counter = AV.Object.extend("Counter");
+			addCount(Counter);
+			showTime(Counter);
+		});
 	
 </script>
 	</div>
