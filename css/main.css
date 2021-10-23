@@ -45,7 +45,7 @@ a {
 }
 #menu {
 	position:fixed;
-	padding-right: 50px;/*菜单栏距离右边大小*/
+	padding-right: 0px;/*菜单栏距离右边大小*/
 	right: 0px;
 }
 #menu .menu-item {
