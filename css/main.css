@@ -40,22 +40,22 @@ a {
 }
 #title {
 	font-size: 20px;
-	color: #b0ddce;
+	color: #b0ddce;/*标题名颜色*/
 	padding: 10px 15px;
 }
 #menu {
 	position:fixed;
-	padding-right: 20px;
+	padding-right: 50px;/*菜单栏距离右边大小*/
 	right: 0px;
 }
 #menu .menu-item {
     display: inline-block;
-	padding: 10px;
+	padding: 10px;/*菜单栏内边距*/
 	list-style: none;
 }
 #menu .menu-item-link{
-	font-size: 12px;
-	color: #b0ddce;
+	font-size: 12px;/*菜单栏字体*/
+	color: #fff;
 }
 #menu .menu-item-link:hover {
 	border-bottom: 1px solid;
@@ -94,7 +94,7 @@ a {
 	left: -250px;
 	height: 100%;
 	top: 0px;
-	background: #479AC7;
+	background: #336699;
 	z-index: 99;
 }
 #sidebar.on {
@@ -126,7 +126,7 @@ a {
 }
 .sidebar-toc:hover {
 	cursor: pointer;
-	color: fff;
+	color: #9cc7b8;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -156,16 +156,16 @@ a {
 	white-space: nowrap;
 }
 #sidebar ul li a {
-	color: #999;
-	font-size: 14px;
+	color: #000; /*左侧标题栏*/
+	font-size: 15px;
 }
 
-#sidebar ul li a:hover{
-	color: #ccc;
+#sidebar ul li a:hover{ /*左菜单栏划过时颜色*/
+	color: blue;
 	border-bottom: 1px solid #ccc;
 }
 #sidebar .active a{
-	color: #9cc7b8;
+	color: #999;
 	border-bottom: 1px solid #9cc7b8;
 }
 .article-toc ul li i {
@@ -204,7 +204,7 @@ a {
 }
 .index-li {
 	margin: 20px 0 20px 0;
-	border-bottom: 1px solid #c6c6c6;
+	border-bottom: 1px solid #c6c6c6;/*首页面分割线*/
 }
 .index-li a{
 	color: #404040;
@@ -213,18 +213,18 @@ a {
 .index-brief{
     position: relative;
 	padding: 5px 5px 10px 5px;
-	font-size: 14px;
+	font-size: 14px;/*首页预览页字体*/
 	font-style: italic;
 	color: #a3a3a3;
 }
 
 .index-li *:hover {
-	color:#1399b5
+	color:#1399b5/*预览划过颜色*/
 }
 .article-meta *{
 	position: relative;
 	font-style: italic;
-	font-size: 12px;
+	font-size: 12px;/*首页日期大小*/
 	color: #acabab;
 	padding: 0 5px 0 0;
 }
@@ -232,7 +232,7 @@ a {
 .index-title {
 	margin-top: 30px;
 	position: relative;
-	font-size: 24px;
+	font-size: 24px;/*首页标题*/
 }
 
 
@@ -394,11 +394,11 @@ table td {
 	font-size: 14px;
 	height: 50px;
 	background-color: #336699;
-	color: #dfb7b7;
+	color: #000;
 	text-align: center;
 }
 #footer a {
-    color: #fff;
+    color: #78C3EB;
 }
 #footer p {
     padding: 5px;
