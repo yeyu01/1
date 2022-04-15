@@ -9,7 +9,7 @@
 	
 	<title>
 	
-		更换marktext | 
+		图文 | 
 	 
 	第一页
 	</title>
@@ -133,15 +133,24 @@ var _hmt = _hmt || [];
 
 			
 							<ul>
+								<li class="file">
+									<a href="/2021/10/07/01%E4%B9%A6%E7%AD%BE/">
+										01书签
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
 								<li class="directory">
 									<a href="#" class="directory">
 										<i class="fa fa-plus-square-o"></i>
-										01 HEXO 笔记
+										02 HEXO 笔记
 									</a>
 									
 							<ul>
 								<li class="file">
-									<a href="/2021/10/05/01%20HEXO%20%E7%AC%94%E8%AE%B0/01%20%E4%B8%BB%E9%A2%98%E7%94%9F%E6%88%90/">
+									<a href="/2021/10/05/02%20HEXO%20%E7%AC%94%E8%AE%B0/01%20%E4%B8%BB%E9%A2%98%E7%94%9F%E6%88%90/">
 										01 主题生成
 									</a>
 								</li>
@@ -150,7 +159,7 @@ var _hmt = _hmt || [];
 			
 							<ul>
 								<li class="file">
-									<a href="/2021/10/23/01%20HEXO%20%E7%AC%94%E8%AE%B0/02%20hexo%E5%9B%BE%E6%A0%87%E4%B8%8D%E6%98%BE%E7%A4%BA/">
+									<a href="/2021/10/23/02%20HEXO%20%E7%AC%94%E8%AE%B0/02%20hexo%E5%9B%BE%E6%A0%87%E4%B8%8D%E6%98%BE%E7%A4%BA/">
 										02 hexo图标不显示
 									</a>
 								</li>
@@ -159,7 +168,7 @@ var _hmt = _hmt || [];
 			
 							<ul>
 								<li class="file">
-									<a href="/2022/04/11/01%20HEXO%20%E7%AC%94%E8%AE%B0/03valine%E8%AF%84%E8%AE%BA/">
+									<a href="/2022/04/11/02%20HEXO%20%E7%AC%94%E8%AE%B0/03valine%E8%AF%84%E8%AE%BA/">
 										03valine评论
 									</a>
 								</li>
@@ -167,9 +176,18 @@ var _hmt = _hmt || [];
 							</ul>
 			
 							<ul>
-								<li class="file">
-									<a href="/2021/10/10/01%20HEXO%20%E7%AC%94%E8%AE%B0/04%E7%9B%B8%E5%AF%B9%E5%9C%B0%E5%9D%80%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA/">
+								<li class="file active">
+									<a href="/2021/10/10/02%20HEXO%20%E7%AC%94%E8%AE%B0/04%E7%9B%B8%E5%AF%B9%E5%9C%B0%E5%9D%80%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA/">
 										04相对地址图片不显示
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2022/04/15/02%20HEXO%20%E7%AC%94%E8%AE%B0/05marktext/">
+										05marktext
 									</a>
 								</li>
 								<div class="article-toc" style="display: none;"></div>
@@ -208,15 +226,6 @@ var _hmt = _hmt || [];
 								
 							</ul>
 			
-							<ul>
-								<li class="file active">
-									<a href="/2022/04/15/yy/">
-										yy
-									</a>
-								</li>
-								<div class="article-toc" style="display: none;"></div>
-							</ul>
-			
 		</div>
 	</div>
 </div>
@@ -225,12 +234,12 @@ var _hmt = _hmt || [];
 	<div id="content">
 		<h1 id="article-title">
 
-	yy
+	04相对地址图片不显示
 </h1>
 <div class="article-meta">
 	
 	<span>yeyu01</span>
-	<span>2022-04-15 09:15:43</span>
+	<span>2021-10-10 17:48:31</span>
 		<div id="article-categories">
     
 		<span>Categories：</span>
@@ -246,8 +255,12 @@ var _hmt = _hmt || [];
 </div>
 
 <div id="article-content">
-	<p>     </p>
-<p>开始用的markdownpad2，因为图片预览问题，使用相对引用时本地显示了网页不显示，使用网络图片本地又不显示。后来发现它的高级版又离线型的，那个效果还好一些。<br>但是觉得还是不好用，在网上搜好用的编辑器，很多推荐marktext,只是表格不好用，在网上找了相关的markdown的表间距，最后都不好用，还用空格填充一样快些。   </p>
+	<p><strong>hexo的图片本地使用网页不显示</strong>    </p>
+<ol>
+<li>使用相对路径，在markdownpad2中可以显示，但是在网页中不显示，之后发现是hexo的问题</li>
+<li>hexo使用<img src="">,预览正常，网页不显示。根据教程下载插件，_config.yml的post_asset_folder : false改为true,还是不能用</li>
+<li>使用picgo和jsdeliver可以轻松使用图片。</li>
+</ol>
 
 </div>
 
@@ -255,11 +268,16 @@ var _hmt = _hmt || [];
     <div class="post-guide">
         <div class="item left">
             
+              <a href="/2021/10/10/03%20%E5%8F%A4%E8%AF%97%E6%96%87/%E9%81%93%E4%BB%8E%E4%B8%8A%E4%BA%BA/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  道从上人
+              </a>
+            
         </div>
         <div class="item right">
             
-              <a href="/2022/04/11/01%20HEXO%20%E7%AC%94%E8%AE%B0/03valine%E8%AF%84%E8%AE%BA/">
-                01 HEXO 笔记
+              <a href="/2021/10/07/02%E4%B9%A6%E7%AD%BE/">
+                
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
               </a>
             
