@@ -15,7 +15,7 @@ class Hero{
         this.frameDeathIndex = 0;
 
         this.LastShortTime = new Date().getTime(); //最后一次射击的时间
-        this.shortInterval =200; //攻速
+        this.shortInterval =70; //攻速
         this.bulletList = [];
 
         this.destory = false;
