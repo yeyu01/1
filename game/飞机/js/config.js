@@ -89,7 +89,7 @@
      height:57,
      x:0,
      y:650 -57,
-     speed:500
+     speed:9999
  }
 
  let HERO = {
