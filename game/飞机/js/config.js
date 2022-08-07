@@ -80,7 +80,7 @@
      bg:bg,
      width:480,
      height:650,
-     speed:10
+     speed:100
  }
 
  const LOADING = {
@@ -89,7 +89,7 @@
      height:57,
      x:0,
      y:650 -57,
-     speed:9999
+     speed:50
  }
 
  let HERO = {
